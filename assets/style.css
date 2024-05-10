@@ -27,6 +27,10 @@ ul {
     padding: 0;
 }
 
+.bullet-point {
+    list-style: circle;
+}
+
 li {
     margin-bottom: 15px;
 }
