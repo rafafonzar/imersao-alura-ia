@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Trajetória na Imersão Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Trajetória na Imersão Alura</h1>
+    </header>
+
+    <main>
+        <section id="tecnicas-de-comando">
+            <h2>Técnicas de Comando</h2>
+                <h3>Zero-shot prompting</h3>
+                    <p>
+                    O prompting zero-shot é uma técnica para direcionar modelos de linguagem grande (LLMs) a realizar tarefas 
+                    sem dados de treinamento específicos da tarefa. O usuário fornece instruções ao LLM sobre o que deseja que 
+                    ele faça, sem precisar mostrar exemplos. Isso permite que os LLMs sejam usados para uma ampla variedade de 
+                    tarefas com treinamento mínimo.</p>
+                    <p>
+                        <strong>
+                            Exemplo:
+                        </strong> 
+                    </p>
+                    <p>
+                        Imagine que você deseja que um LLM classifique o sentimento de um texto. Você poderia fornecer o 
+                        seguinte prompt: "Classifique o seguinte texto como positivo, neutro ou negativo: 'Hoje foi um dia lindo!'".
+                         O LLM, mesmo sem treinamento específico para essa tarefa, deveria ser capaz de entender o que você está 
+                         pedindo e usar seu conhecimento de linguagem para determinar que o texto expressa um sentimento positivo.
+                    </p>
+                <h3>Few-shot prompting</h3>
+                    <p>
+                        O prompting few-shot é similar ao zero-shot, mas fornece alguns exemplos para orientar o modelo.  
+                        Ao invés de apenas instruções, você dá amostras de entrada e saída desejada para a tarefa específica. 
+                        Isso ajuda o LLM a entender melhor o que se espera dele, levando a melhores resultados em tarefas 
+                        complexas.
+                    </p>
+                    <p>
+                        <strong>
+                            Exemplo:
+                        </strong> 
+                    </p>
+                    <p>
+                        Imagine que você quer que um LLM traduza do inglês para o francês. Com few-shot prompting, você daria 
+                        alguns exemplos de frases em inglês e sua tradução francesa correspondente. Por exemplo:
+                    </p>
+                    <ol class="bullet-point">
+                        <li>Entrada: "Hello, how are you?"</li>
+                        <li>Saída: "Bonjour, comment allez-vous?"</li>
+                        <li>Entrada: "What is your name?"</li>
+                        <li>Saída: "Comment tu t'appelles?"</li>
+                    </ol>
+                    <p>
+                        Com esses poucos exemplos, o LLM consegue captar o padrão da tradução e aplicar esse conhecimento para traduzir frases novas.
+                    </p>
+                    <p>
+                        <strong>
+                            Observação:
+                        </strong>
+                    </p>
+                    <p>
+                        O few-shot prompting geralmente é mais preciso que o zero-shot, mas ainda requer menos dados que o treinamento tradicional. 
+                        É uma técnica balanceada entre facilidade de uso e performance.
+                    </p>
+                <h3>Few-shot Chain-of-Thought prompting</h3>
+                    <p>
+                        Few-shot chain-of-thought prompting combina as ideias de few-shot prompting e reasoning explícito.  
+                        Ele fornece alguns exemplos, mas ao invés de apenas entrada e saída, mostra os passos de raciocínio 
+                        usados para chegar à saída. Isso melhora a interpretabilidade e potencialmente a precisão do LLM.
+                    </p>
+                    <p>
+                        <strong>
+                            Exemplo:
+                        </strong> 
+                    </p>
+                    <p>
+                        Imagine que você quer que um LLM resolva um problema de adição. Com few-shot chain-of-thought prompting,
+                         você daria alguns exemplos mostrando o processo de soma:
+                    </p>
+                    <ol class="bullet-point">
+                        <li>1. Entrada: 3 + 4</li>
+                        <li>2. Passo 1: Identifique os números a serem somados (3 e 4).</li>
+                        <li>3. Passo 2: Some os números identificados (3 + 4 = 7).</li>
+                        <li>4. Saída: 7</li>
+                    </ol>
+                    <p>
+                        Nesse caso, o LLM aprende não só a somar, mas também a quebrar o problema em passos menores e rastrear o raciocínio.
+                    </p>
+                    <p>
+                        <strong>
+                            Observação:
+                        </strong>
+                    </p>
+                    <p>
+                        Few-shot chain-of-thought prompting é uma técnica mais recente e promissora. Ao explicitar o raciocínio, pode levar a 
+                        resultados mais robustos e compreensíveis, mas requer a criação de prompts mais elaborados.
+                    </p>
+                    <a href="/index.html" title=" Página inicial">Voltar para página inicial</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rafael Fonzar Albuquerque</p>
+    </footer>
+</body>
